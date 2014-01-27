@@ -1,0 +1,20 @@
+class integer(object):
+	def __init__(self,number,positivity):
+		self.number = number
+		self.positivity = positivity
+
+	def display(self):
+		
+		print self.positivity + str(self.number)
+		
+		
+
+class NegativeInteger(integer):
+	def __init__(self,number):
+		super(NegativeInteger, self).__init__(number,"-")
+		
+
+if __name__ == "__main__":
+	
+	x = NegativeInteger(8)
+	x.display
